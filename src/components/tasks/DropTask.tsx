@@ -1,0 +1,26 @@
+import { useDroppable } from "@dnd-kit/core"
+
+
+type DropTaskProps = {
+  status: string
+}
+
+export const DropTask = ({ status }: DropTaskProps) => {
+  const { isOver, setNodeRef } = useDroppable({
+    id: status,
+  })
+
+  const style ={
+    opacity: isOver ? 0.3 : undefined,
+  }
+
+  return (
+    <div
+      ref={setNodeRef}
+      style={style}
+      className="text-xs font-semibold uppercase p-2 border border-dashed border-slate-500 mt-5 grit place-con text-slate-500"
+    >
+      Soltar tarea aquí
+    </div>
+  )
+}

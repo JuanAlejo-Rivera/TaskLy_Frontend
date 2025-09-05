@@ -32,7 +32,7 @@ export default function LoginView() {
             <h1 className="text-5xl font-black text-white">Iniciar Sesión</h1>
             <p className="text-2xl font-light text-white mt-5">
                 Comienza a planear tus proyectos {''}
-                <span className="font-bold bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 bg-clip-text text-transparent">
+                <span className="text-gradient font-bold bg-clip-text text-transparent">
                     iniciando session en este formulario</span>
             </p>
 
@@ -85,8 +85,7 @@ export default function LoginView() {
                 <input
                     type="submit"
                     value='Iniciar Sesión'
-                    className="  bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 
-                        hover:opacity-90 transition w-full p-3  text-white font-black  text-xl cursor-pointer"
+                    className="btn-primary text-white font-black  text-xl cursor-pointer"
                 />
             </form>
 

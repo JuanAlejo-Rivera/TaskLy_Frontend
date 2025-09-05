@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
+
+
+
+
+.btn-primary {
+    @apply bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 hover:opacity-90 transition w-full p-3
+}
+
+.text-gradient{
+    @apply bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 
+}

@@ -34,17 +34,17 @@ export default function ForgotPasswordView() {
             <h1 className="text-5xl font-black text-white">Reestablecer contraseña</h1>
             <p className="text-2xl font-light text-white mt-5">
                 ¿Olvidatse tu contraseña?, Coloca tu email {''}
-                <span className=" text-fuchsia-500 font-bold">y reestablece tu contraseña</span>
+                <span className=" text-gradient font-bold">y reestablece tu contraseña</span>
             </p>
 
             <form
                 onSubmit={handleSubmit(handleForgotPassword)}
-                className="space-y-8 p-10 mt-10  bg-white"
+                className="space-y-8 mt-10 p-10 bg-slate-800 rounded-lg border-slate-700"
                 noValidate
             >
                 <div className="flex flex-col gap-5">
                     <label
-                        className="font-normal text-2xl"
+                        className="font-normal text-slate-100 text-2xl"
                         htmlFor="email"
                     >Email</label>
                     <input
@@ -68,7 +68,7 @@ export default function ForgotPasswordView() {
                 <input
                     type="submit"
                     value='Enviar Instrucciones'
-                    className="bg-fuchsia-600 hover:bg-fuchsia-700 w-full p-3  text-white font-black  text-xl cursor-pointer"
+                    className="btn-primary w-full p-3  text-white font-black  text-xl cursor-pointer"
                 />
             </form>
 

@@ -32,17 +32,17 @@ export default function RegisterView() {
             <h1 className="text-5xl font-black text-white">Solicitar Código de Confirmación</h1>
             <p className="text-2xl font-light text-white mt-5">
                 Coloca tu e-mail para recibir {''}
-                <span className=" text-fuchsia-500 font-bold"> un nuevo código</span>
+                <span className=" text-gradient font-bold"> un nuevo código</span>
             </p>
 
             <form
                 onSubmit={handleSubmit(handleRequestCode)}
-                className="space-y-8 p-10 rounded-lg bg-white mt-10"
+                className="space-y-8 mt-10 p-10 bg-slate-800 rounded-lg border-slate-700"
                 noValidate
             >
                 <div className="flex flex-col gap-5">
                     <label
-                        className="font-normal text-2xl"
+                        className="font-normal text-slate-100 text-2xl"
                         htmlFor="email"
                     >Email</label>
                     <input
@@ -66,7 +66,7 @@ export default function RegisterView() {
                 <input
                     type="submit"
                     value='Enviar Código'
-                    className="bg-fuchsia-600 hover:bg-fuchsia-700 w-full p-3 rounded-lg text-white font-black  text-xl cursor-pointer"
+                    className="btn-primary w-full p-3 rounded-lg text-white font-black  text-xl cursor-pointer"
                 />
             </form>
 

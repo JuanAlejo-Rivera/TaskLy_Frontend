@@ -32,13 +32,13 @@ export default function LoginView() {
             <h1 className="text-5xl font-black text-white">Iniciar Sesión</h1>
             <p className="text-2xl font-light text-white mt-5">
                 Comienza a planear tus proyectos {''}
-                <span className="text-gradient font-bold bg-clip-text text-transparent">
+                <span className="text-gradient font-bold text-transparent">
                     iniciando session en este formulario</span>
             </p>
 
             <form
                 onSubmit={handleSubmit(handleLogin)}
-                className="space-y-8 mt-10 p-10 bg-slate-800 border-slate-700"
+                className="space-y-8 mt-10 p-10 bg-slate-800 rounded-lg border-slate-700"
                 noValidate
             >
                 <div className="flex flex-col text-slate-100 gap-5">

@@ -41,7 +41,7 @@ export default function SerchResult({ user, reset }: SerchResultProps) {
             <div className="flex justify-between items-center">
                 <p>{user.name}</p>
                 <button
-                    className="text-purple-600 hover:bg-purple-100 px-10 py-3 font-bold cursor-pointer"
+                    className="text-gradient hover:opacity-90 transition px-10 py-3 font-bold cursor-pointer"
                     onClick={handleAddUserToProject}
                 >
                     Agregar al Proyecto

@@ -13,7 +13,7 @@ export const NewPasswordView = () => {
             <h1 className="text-5xl font-black text-white">Reestablecer contraseña</h1>
             <p className="text-2xl font-light text-white mt-5">
                 Ingresa el código que recibiste {''}
-                <span className=" text-fuchsia-500 font-bold"> por email</span>
+                <span className=" text-gradient font-bold"> por email</span>
             </p>
             {!isValidToken ?
                 <NewPasswordToken token={token} setToken ={setToken} setIsValidToken = {setIsValidToken} /> :

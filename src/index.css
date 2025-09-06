@@ -8,6 +8,11 @@
     @apply bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 hover:opacity-90 transition w-full p-3
 }
 
-.text-gradient{
-    @apply bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 
+.btn-secondary {
+    @apply bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 hover:opacity-90 transition
 }
+
+.text-gradient{
+    @apply bg-gradient-to-r from-violet-500 via-indigo-500 to-cyan-400 bg-clip-text text-transparent
+}
+

@@ -47,7 +47,7 @@ export default function Tabs() {
                                 to={tab.href}
                                 className={classNames(
                                     location.pathname === tab.href
-                                        ? 'border-purple-800 text-purple-800'
+                                        ? 'border-purple-800 text-gradient'
                                         : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                                     'group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium'
                                 )}

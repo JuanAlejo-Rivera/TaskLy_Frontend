@@ -7,7 +7,7 @@ export const NoteFound = () => {
       <p className='mt-10 text-center text-white'>
         Tal vez quieras volver a {' '}
 
-        <Link className='text-fuchsia-500' to={'/'}>Proyectos</Link>
+        <Link className='text-gradient' to={'/'}>Proyectos</Link>
       </p>
     </>
   )

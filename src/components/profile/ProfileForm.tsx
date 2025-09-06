@@ -69,6 +69,7 @@ export default function ProfileForm({ data }: ProfileFormProps) {
                             type="email"
                             placeholder="Tu Email"
                             className="w-full p-3  border border-gray-200"
+                            disabled
                             {...register("email", {
                                 required: "EL e-mail es obligatorio",
                                 pattern: {
@@ -84,7 +85,7 @@ export default function ProfileForm({ data }: ProfileFormProps) {
                     <input
                         type="submit"
                         value='Guardar Cambios'
-                        className="bg-fuchsia-600 w-full p-3 text-white uppercase font-bold hover:bg-fuchsia-700 cursor-pointer transition-colors"
+                        className="btn-primary w-full p-3 text-white uppercase font-bold cursor-pointer transition-colors"
                     />
                 </form>
             </div>

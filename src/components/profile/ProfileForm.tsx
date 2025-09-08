@@ -23,7 +23,7 @@ export default function ProfileForm({ data }: ProfileFormProps) {
         },
         onSuccess: (data) => {
             toast.success(data);
-            queryclient.invalidateQueries({queryKey:['user']}) 
+            queryclient.invalidateQueries({ queryKey: ['user'] })
         }
     })
 
@@ -68,7 +68,7 @@ export default function ProfileForm({ data }: ProfileFormProps) {
                             id="text"
                             type="email"
                             placeholder="Tu Email"
-                            className="w-full p-3  border border-gray-200"
+                            className="w-full p-3 border border-gray-200 text-gray-400"
                             disabled
                             {...register("email", {
                                 required: "EL e-mail es obligatorio",

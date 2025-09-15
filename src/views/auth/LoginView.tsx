@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 import { authenticateUser } from "@/api/AuthAPI";
+import TooltipNote from "@/components/PopUpNote";
 
 export default function LoginView() {
 
@@ -36,6 +37,7 @@ export default function LoginView() {
                     iniciando session en este formulario</span>
             </p>
 
+            <TooltipNote />
             <form
                 onSubmit={handleSubmit(handleLogin)}
                 className="space-y-8 mt-10 p-10 bg-slate-800 rounded-lg border-slate-700"

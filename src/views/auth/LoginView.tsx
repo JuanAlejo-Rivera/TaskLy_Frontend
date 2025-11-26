@@ -34,7 +34,7 @@ export default function LoginView() {
             <p className="text-2xl font-light text-white mt-5">
                 Comienza a planear tus proyectos {''}
                 <span className="text-gradient font-bold text-transparent">
-                    iniciando session en este formulario</span>
+                    iniciando sesión en este formulario</span>
             </p>
 
             <TooltipNote />
